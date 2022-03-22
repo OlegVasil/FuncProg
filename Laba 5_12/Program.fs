@@ -3,7 +3,7 @@
 let Otvet (k:string) =    
     match k with 
     |"F#"|"Prolog" -> "Подлиза..."
-    | _ -> ""
+    | _ -> "Хм...Ваше право"
 [<EntryPoint>]
 let main argv =
     System.Console.WriteLine("Какой ваш любимый язык программирования?")
