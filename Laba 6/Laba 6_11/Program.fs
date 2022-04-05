@@ -18,7 +18,7 @@ let Summ a b c = (a+b)+c
 let Mod (list:'int list) = 
     let rec Mod_1 list (result:'int list)=
         match list with
-        | a::b::c::d-> Mod_1 d (result @ [Summ a b c]) 
+        | a::b::c::tail-> Mod_1 tail (result @ [Summ a b c]) 
         | a::b::[]->(result @ [Summ a b 1])
         | a::[]-> (result @ [Summ a 1 1])
         | []->result
