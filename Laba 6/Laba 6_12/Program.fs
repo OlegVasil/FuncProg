@@ -35,7 +35,7 @@ let Min list =
             find_min_r t new_min new_min_idx new_idx
     find_min_r list list.[0] 0 0
 
-let reverse list=
+let Reverse list=
     let rec rev1 list new_list=
         match list with
         |[]->new_list
@@ -54,7 +54,7 @@ let main argv =
    let start = Math.Min(max,min)
    let endpoint = Math.Max(min,max)
    let piece = list.[start+1..endpoint-1]
-   let result = list.[0..start]@ (reverse piece) @ list.[endpoint..n-1]
+   let result = list.[0..start]@ (Reverse piece) @ list.[endpoint..n-1]
    WriteList(result)
    0 
 
