@@ -61,4 +61,4 @@ let main argv =
     Console.WriteLine("Ответ: ")
     let result=list.[start+1..endpoint-1]
     WriteList (result)
-    0 // return an integer exit code
+    0 
