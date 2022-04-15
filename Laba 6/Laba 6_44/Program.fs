@@ -6,16 +6,7 @@ let rec ReadList n =
     let Head = Convert.ToDouble(Console.ReadLine()) 
     let Tail = ReadList (n-1)
     Head::Tail
-
-(*let check (list:float list)=
-    let rec c1 list b=
-        match list with
-        | a::t-> 
-            if ((a%1.0=0.0 && b%1.0=0.0) ||(a%1.0<>0.0 && b%1.0<>0.0)) then false
-            else c1 t a
-        | []-> true
-    c1 list.Tail list.Head *)
-
+    
 let Check (list: float list) = 
     let rec check list h2 =
        match list with 
